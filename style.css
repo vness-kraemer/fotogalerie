@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    background-color: black;
+}
+
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 64px;
+    text-align: center;
+    letter-spacing: 4px;
+    color: white;
+}
+
+.main-wrapper {
+    padding: 20px;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+
+}
+
+.imgbox {
+    height: 300px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.imgbox:hover {
+    opacity: 0.5;
+}
+
+#fullImgContainer {
+    padding-left: 20px;
+    background-color: black;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+    
+}
+
+.fullImg {
+    max-width: 50%;
+    max-height: 50%;
+}
+
+.img-container {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-container {
+    padding-top: 100px;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: start;
+}
+
+.arrow-container {
+    width: 100px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    width: 40px;
+    cursor: pointer; 
+}
+
+.icon:hover {
+    transform: scale(1.1);
+}
+
+.d-none {
+    display: none;
+}
+
+@media screen and (max-width: 980px) {
+
+    #fullImgContainer {
+        padding-left: 20px;
+    }
+
+}
+
+@media screen and (max-width: 780px) {
+    .arrow-container {
+        width: 50px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .arrow-container {
+        width: 30px;
+    }
+
+    .icon {
+        width: 20px;
+    }
+
+    .icon-container {
+        padding-top: 150px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .arrow-container {
+        width: 10px;
+    }
+
+    .icon {
+        width: 20px;
+    }
+
+    .icon-container {
+        padding-top: 200px;
+    }
+
+    #fullImgContainer {
+        padding-left: 0;
+    }
+}
