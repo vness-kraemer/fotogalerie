@@ -72,12 +72,12 @@ h1 {
 }
 
 .arrow-container {
-    width: 100px;
-    padding: 20px;
+    width: 100vh;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+    position: absolute;
 }
 
 .icon {
@@ -89,9 +89,27 @@ h1 {
     transform: scale(1.1);
 }
 
+.close-icon {
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 100px;
+}
+
 .d-none {
     display: none;
 }
+
+
+@media screen and (max-width: 1040px) {
+
+    .arrow-container {
+        width: 700px;
+    }
+
+}
+
 
 @media screen and (max-width: 980px) {
 
@@ -103,13 +121,13 @@ h1 {
 
 @media screen and (max-width: 780px) {
     .arrow-container {
-        width: 50px;
+        width: 550px;
     }
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 650px) {
     .arrow-container {
-        width: 30px;
+        width: 400px;
     }
 
     .icon {
@@ -119,11 +137,24 @@ h1 {
     .icon-container {
         padding-top: 150px;
     }
+    
+    .imgbox {
+        width: 300px;
+    }
+
+    .close-icon {
+        padding: 50px;
+    }
 }
 
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 500px) {
+
+    h1 {
+        font-size: 32px;
+    }
+
     .arrow-container {
-        width: 10px;
+        width: 350px;
     }
 
     .icon {
@@ -137,4 +168,19 @@ h1 {
     #fullImgContainer {
         padding-left: 0;
     }
+
+    .imgbox {
+        width: 200px;
+        height: 200px;
+    }
 }
+
+
+@media screen and (max-width: 380px) {
+
+    .arrow-container {
+        width: 250px;
+    }
+}
+
+

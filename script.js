@@ -1,5 +1,5 @@
 // create arrays for images
-let images = ['img/abstract-art.webp', 'img/coding.webp', 'img/food.webp', 'img/friends-park.webp', 'img/friends.webp', 'img/makeUp.webp', 'img/nyt-man.webp', 'img/photography.webp', 'img/reading-white.webp', 'img/road.webp', 'img/sea.webp', 'img/spain-2.webp', 'img/spain.webp', 'img/vacation.webp'];
+let images = ['img/abstract-art.webp', 'img/coding.webp', 'img/food.webp', 'img/friends-park.webp', 'img/makeUp.webp', 'img/nyt-man.webp', 'img/photography.webp', 'img/reading-white.webp', 'img/road.webp', 'img/sea.webp', 'img/spain-2.webp', 'img/spain.webp', 'img/vacation.webp'];
 
 
 // fills content element with images
@@ -26,14 +26,12 @@ function openImg(i) {
     <div id="fullImgContainer">
         <div class="img-container">
             <div class="arrow-container">
-                <img class="icon" onclick="previousImg(${i - 1})" src="img/icons/prevImg.png">
+                <img class="icon arrow-left" onclick="previousImg(${i - 1})" src="img/icons/prevImg.png">
+                <img class="icon arrow-right" onclick="nextImg(${i + 1})" src="img/icons/nextImg.png">
                 </div>
             <img class="fullImg" src="${images[i]}">
-            <div class="arrow-container">
-                <img class="icon" onclick="nextImg(${i + 1})" src="img/icons/nextImg.png">
-                </div>
                 <div class="icon-container">
-                <img class="icon" onclick="closeImg()" src="img/icons/back.png">
+                <img class="icon close-icon" onclick="closeImg()" src="img/icons/back.png">
             </div>
             </div>
     `;
