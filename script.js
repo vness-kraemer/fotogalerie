@@ -26,8 +26,8 @@ function openImg(i) {
     <div id="fullImgContainer">
         <div class="img-container">
             <div class="arrow-container">
-                <img class="icon arrow-left" onclick="previousImg(${i - 1})" src="img/icons/prevImg.png">
-                <img class="icon arrow-right" onclick="nextImg(${i + 1})" src="img/icons/nextImg.png">
+                <img class="icon" onclick="previousImg(${i - 1})" src="img/icons/prevImg.png">
+                <img class="icon" onclick="nextImg(${i + 1})" src="img/icons/nextImg.png">
                 </div>
             <img class="fullImg" src="${images[i]}">
                 <div class="icon-container">
